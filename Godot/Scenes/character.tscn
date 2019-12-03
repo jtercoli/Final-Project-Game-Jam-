@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://character.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Assets/character.gd" type="Script" id=1]
+[ext_resource path="res://Assets/raven-silhouette-vector-art.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 76.3312, 81.9172 )
+extents = Vector2( 187.15, 178.344 )
 
 [node name="character" type="KinematicBody2D"]
 position = Vector2( 175.809, 173.958 )
@@ -14,9 +14,10 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( -0.483398, 0.797546 )
-scale = Vector2( -2.31606, 2.59311 )
+position = Vector2( 239.33, 84.2293 )
+scale = Vector2( -0.16975, 0.16826 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 243.991, 73.4801 )
 shape = SubResource( 1 )

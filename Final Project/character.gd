@@ -23,4 +23,6 @@ func _input(event):
 		#if body.is_in_group("points"):
 	#		emit_signal("score")
 	#		body.queue_free()
-		
+		#if body.is_in_group("metor"):
+			#emit_signal("death2")
+			#body.qeue_free()

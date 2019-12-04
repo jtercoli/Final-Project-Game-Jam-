@@ -25,7 +25,7 @@ smoothing_enabled = true
 
 [node name="meteor spawn" parent="character" instance=ExtResource( 4 )]
 
-[node name="HUD" type="CanvasLayer" parent="." instance=ExtResource( 5 )]
+[node name="HUD" parent="." instance=ExtResource( 5 )]
 
 [node name="Wall" type="StaticBody2D" parent="."]
 

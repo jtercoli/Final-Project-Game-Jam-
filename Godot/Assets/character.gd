@@ -6,7 +6,7 @@ var _dying_threshold = 50
 var speed=20
 var character_health = 100
 signal hit
-onready var caw = get_node("World/caw")
+onready var noise = get_node("/root/World/caw")
 func _ready():
 	set_process_input(true)
 	#connect("score",WorldNODE,"increase_score")
@@ -24,8 +24,8 @@ func _input(event):
 	if Input.is_action_pressed("right"):
 		position.x += speed
 		$AnimatedSprite.play("Flying")
-	#if Input.is_action_pressed("space"):
-		#caw.playing = true
+	if Input.is_action_pressed("space"):
+		noise.playing = true
 
 func _physics_process(delta):
 	move_and_collide(Vector2(0,0))

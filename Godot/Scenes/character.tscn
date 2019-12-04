@@ -50,7 +50,7 @@ position = Vector2( 262.429, 3.49905 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "Flying"
-frame = 2
+frame = 25
 speed_scale = 5.0
 playing = true
 

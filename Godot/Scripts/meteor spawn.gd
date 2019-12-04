@@ -1,6 +1,6 @@
 extends Node
 
-const path_meteor = preload("res://Meteor.tscn")
+const path_meteor = preload("res://Scenes/Meteor.tscn")
 
 func _ready():
  
@@ -18,7 +18,7 @@ func _on_Timer_timeout():
  var rock = path_meteor.instance()
  var pos   = Vector2()
  
- pos.x = rand_range(0 + 16, get_viewport().get_visible_rect().size.x - 16)
+ pos.x = rand_range(0,4000)
  pos.y = 0 - 16
  
  rock.position = pos
@@ -26,7 +26,7 @@ func _on_Timer_timeout():
  $Container.add_child(rock)
  
  # Set timer again
- $Timer.wait_time = rand_range(1, 3)
+ $Timer.wait_time = rand_range(.5, 1)
  $Timer.start()
  
  pass

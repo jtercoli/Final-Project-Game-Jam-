@@ -50,5 +50,9 @@ align = 1
 script = ExtResource( 2 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 559.607, 268.032 )
+scale = Vector2( 5, 5 )
 stream = ExtResource( 3 )
+volume_db = -9.087
 autoplay = true
+attenuation = 0.00929069

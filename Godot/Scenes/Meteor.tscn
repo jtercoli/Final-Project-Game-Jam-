@@ -13,6 +13,7 @@ radius = 82.3362
 trail_divisor = 2
 flag_disable_z = true
 gravity = Vector3( 0, 98, 0 )
+angular_velocity = 8.43834e+007
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 0.0

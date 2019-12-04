@@ -282,4 +282,18 @@ shape = SubResource( 5 )
 
 [node name="character" parent="." instance=ExtResource( 8 )]
 position = Vector2( -2.58846, 258.03 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Camera2D" type="Camera2D" parent="character"]
+position = Vector2( 2022.13, 191.701 )
+current = true
+limit_left = -10000011
+smoothing_enabled = true
+
+[node name="Wall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( -12.4476, 599.975, 3860.2, 589.107, 3860.2, 2.23279, 3983.37, -5.01257, 3976.12, 697.787, -12.4476, 708.655 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Wall"]
+polygon = PoolVector2Array( 3856.57, -5.01257, -19.6929, -5.01257, -1.57953, 690.542, -99.3919, 694.165, -95.7692, -81.0888, 3994.24, -106.448, 3976.12, -1.38989 )

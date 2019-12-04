@@ -26,7 +26,7 @@ margin_left = 890.0
 margin_top = 10.0
 margin_right = 1027.0
 margin_bottom = 30.0
-text = "Lives ="
+text = "We tried"
 align = 1
 
 [node name="Controls" type="Label" parent="."]
@@ -42,7 +42,8 @@ align = 1
 margin_top = 10.0
 margin_right = 137.0
 margin_bottom = 30.0
-text = "Score ="
+text = "Bird of Nightmares
+"
 align = 1
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
